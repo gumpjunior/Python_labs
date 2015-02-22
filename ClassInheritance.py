@@ -24,7 +24,7 @@ class quack:
 # Parent class, defined based on both fly and quack.
 #===========================================================
 
-class regularDuck(fly, quack):
+class Duck(fly, quack):
 
     def __init__(self, className):      #"className" here will overwrite the one defined in base class "fly.py",
                                         #and "quack.py". And all the funcs in base class use var "className" will
@@ -40,7 +40,7 @@ class regularDuck(fly, quack):
 # Main func
 #===========================================================================
 
-regularDuck = regularDuck("regularDuck")
+Duck = Duck("Duck")
 
-regularDuck.fly()                       #call the one defined in base class. Also output class Duck's name.
-regularDuck.quack()                     #call the one defined in extended class.
+Duck.fly()                       #call the one defined in base class. Also output class Duck's name.
+Duck.quack()                     #call the one defined in extended class.
